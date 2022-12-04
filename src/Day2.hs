@@ -80,7 +80,6 @@ hardAnswer :: IO ()
 hardAnswer = do
   contents <- readFile "data/day2.txt"
   let parsed = map reverseResult $ parseInput2 contents
-  print parsed
   let score = sum . map (\x -> shapeScore x + (gameScore . evalRound) x) $ parsed
   putStrLn "The hard answer for day 2 is:"
   print score
