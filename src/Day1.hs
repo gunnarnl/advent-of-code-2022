@@ -1,4 +1,4 @@
-module DayOne (answer) where
+module Day1 (answer) where
 
 getFileContents :: String -> IO [String]
 getFileContents s = do

@@ -1,10 +1,10 @@
 module Main where
 
-import qualified DayOne (answer)
-import qualified Day2
+import qualified Day1 (answer)
+import qualified Day2 (easyAnswer, hardAnswer)
 
 main :: IO ()
 main = do
-  DayOne.answer
+  Day1.answer
   Day2.easyAnswer
   Day2.hardAnswer
