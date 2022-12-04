@@ -22,7 +22,8 @@ maintainer:         gunnar.l.n@gmail.com
 extra-source-files: CHANGELOG.md
 
 library
-    exposed-modules:  DayOne
+    exposed-modules:  DayOne,
+                      Day2
 
     -- Modules included in this library but not exported.
     -- other-modules:
