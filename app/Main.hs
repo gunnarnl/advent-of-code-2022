@@ -3,6 +3,7 @@ module Main where
 import qualified Day1 (answer)
 import qualified Day2 (easyAnswer, hardAnswer)
 import qualified Day3 (easyAnswer, hardAnswer)
+import qualified Day4 (easyAnswer, hardAnswer)
 
 main :: IO ()
 main = do
@@ -11,3 +12,5 @@ main = do
   Day2.hardAnswer
   Day3.easyAnswer
   Day3.hardAnswer
+  Day4.easyAnswer
+  Day4.hardAnswer
