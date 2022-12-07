@@ -4,6 +4,7 @@ import qualified Day1 (answer)
 import qualified Day2 (easyAnswer, hardAnswer)
 import qualified Day3 (easyAnswer, hardAnswer)
 import qualified Day4 (easyAnswer, hardAnswer)
+import qualified Day5
 
 main :: IO ()
 main = do
@@ -14,3 +15,4 @@ main = do
   Day3.hardAnswer
   Day4.easyAnswer
   Day4.hardAnswer
+  Day5.easyAnswer
