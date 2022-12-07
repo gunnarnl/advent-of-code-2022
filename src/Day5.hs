@@ -1,6 +1,8 @@
 module Day5 where
 import Data.List ( transpose )
 
+data Move = Mv Int Int Int
+
 -- what a pain in the ass
 parseContents :: String -> ([String],[[Int]])
 parseContents = parseSides . break null . lines
@@ -10,10 +12,10 @@ parseContents = parseSides . break null . lines
     parseSides (boxes, rules) = (parseBox boxes, parseRule rules)
 
 applyRule :: [String] -> [Int] -> [String]
-applyRule s (n:s1:s2) = removedList . splitAt s1
-  where move = take n . reverse
-        removedList (x,_:ys) = move (s !! s1)
-        removedList = 
+applyRule s (n:s1:s2:_) = removedList . splitAt s1
+  where listToMove = take n . reverse $ (s !! s1)
+        oldList = drop n
+        newList = (s !! s2) ++ listToMove
 
 easyAnswer :: IO ()
 easyAnswer = do
