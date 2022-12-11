@@ -16,3 +16,4 @@ main = do
   Day4.easyAnswer
   Day4.hardAnswer
   Day5.easyAnswer
+  Day5.hardAnswer
